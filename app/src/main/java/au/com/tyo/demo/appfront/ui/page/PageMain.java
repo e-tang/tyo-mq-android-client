@@ -1,4 +1,4 @@
-package au.com.tyo.sample.ui.page;
+package au.com.tyo.demo.appfront.ui.page;
 
 import android.app.Activity;
 

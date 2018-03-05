@@ -1,9 +1,9 @@
-package au.com.tyo.sample.ui.page;
+package au.com.tyo.demo.appfront.ui.page;
 
 import android.app.Activity;
 
 import au.com.tyo.app.Controller;
-import au.com.tyo.inventory.R;
+import au.com.tyo.demo.appfront.R;
 
 /**
  * Created by Eric Tang (eric.tang@tyo.com.au) on 27/11/17.

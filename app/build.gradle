@@ -22,16 +22,12 @@ def buildName = "build${buildTime()}"
 android {
     compileSdkVersion 26
     buildToolsVersion "27.0.3"
-
     defaultConfig {
-        applicationId "au.com.tyo.sample"
+        applicationId 'au.com.tyo.demo.appfront'
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode "${buildNumber}".toInteger()
         versionName "${versionFullName}"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
     }
@@ -77,17 +73,16 @@ android {
         abortOnError false
     }
     useLibrary 'org.apache.http.legacy'
+    productFlavors {
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-
-//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-//        exclude group: 'com.android.support', module: 'support-annotations'
-//    })
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    //        exclude group: 'com.android.support', module: 'support-annotations'
+    //    })
     compile 'com.android.support:appcompat-v7:26.+'
-
     compile project(path: ':CommonAppLib')
-
-//    testCompile 'junit:junit:4.12'
+    //    testCompile 'junit:junit:4.12'
 }

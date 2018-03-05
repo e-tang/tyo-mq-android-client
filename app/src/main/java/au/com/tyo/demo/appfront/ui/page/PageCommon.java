@@ -1,10 +1,10 @@
-package au.com.tyo.sample.ui.page;
+package au.com.tyo.demo.appfront.ui.page;
 
 import android.app.Activity;
 
 import au.com.tyo.app.Controller;
-import au.com.tyo.app.ui.Page;
-import au.com.tyo.inventory.R;
+import au.com.tyo.app.ui.page.Page;
+import au.com.tyo.demo.appfront.R;
 
 /**
  * Created by Eric Tang (eric.tang@tyo.com.au) on 27/11/17.
@@ -12,7 +12,7 @@ import au.com.tyo.inventory.R;
 
 public class PageCommon extends Page {
 
-    protected au.com.tyo.sample.Controller controller;
+    protected au.com.tyo.demo.appfront.Controller controller;
 
     /**
      * @param controller
@@ -21,7 +21,7 @@ public class PageCommon extends Page {
     public PageCommon(Controller controller, Activity activity) {
         super(controller, activity);
 
-        this.controller = (au.com.tyo.sample.Controller) controller;
+        this.controller = (au.com.tyo.demo.appfront.Controller) controller;
 
         toolbarColor = activity.getResources().getColor(R.color.toolbarColor);
         titleTextColor = activity.getResources().getColor(R.color.white);

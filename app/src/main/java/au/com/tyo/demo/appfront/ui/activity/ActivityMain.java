@@ -1,6 +1,6 @@
-package au.com.tyo.sample.ui.activity;
+package au.com.tyo.demo.appfront.ui.activity;
 
-import au.com.tyo.sample.ui.page.PageMain;
+import au.com.tyo.demo.appfront.ui.page.PageMain;
 
 /**
  * Created by Eric Tang (eric.tang@tyo.com.au) on 27/11/17.
